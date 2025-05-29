@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "scurvy_dogs:item/bicorn_hat_2d",
+    "layer1": "scurvy_dogs:item/fancy_bicorn_hat_overlay"
+  }
+}

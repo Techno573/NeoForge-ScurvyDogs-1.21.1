@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "scurvy_dogs:item/fancy_bicorn_hat_2d"
+  },
+  "perspectives": {
+    "head" : {
+      "parent": "scurvy_dogs:item/fancy_bicorn_hat_3d"
+    }
+  }
+}
