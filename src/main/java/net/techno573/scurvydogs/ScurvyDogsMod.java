@@ -1,6 +1,10 @@
 package net.techno573.scurvydogs;
 
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.techno573.scurvydogs.block.ModBlocks;
+import net.techno573.scurvydogs.entity.ModEntities;
+import net.techno573.scurvydogs.entity.ModEntityAttributes;
+import net.techno573.scurvydogs.entity.client.ProceduralSpiderRenderer;
 import net.techno573.scurvydogs.event.ModEventBus;
 import net.techno573.scurvydogs.item.ModCreativeModeTabs;
 import net.techno573.scurvydogs.item.ModItems;
@@ -39,12 +43,15 @@ public class ScurvyDogsMod
         // Register the Deferred Register to the mod event bus so tabs get registered
         ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
 
+        ModEntities.register(modEventBus);
+
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab
         modEventBus.register(new ModEventBus());
+        modEventBus.addListener(ModEntityAttributes::registerAttributes);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -54,6 +61,8 @@ public class ScurvyDogsMod
     {
 
     }
+
+
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
@@ -75,7 +84,7 @@ public class ScurvyDogsMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
+            EntityRenderers.register(ModEntities.PROCEDURAL_SPIDER.get(), ProceduralSpiderRenderer::new);
         }
     }
 }
