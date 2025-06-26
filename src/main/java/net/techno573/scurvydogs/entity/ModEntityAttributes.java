@@ -9,10 +9,10 @@ public class ModEntityAttributes {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(
-                ModEntities.PROCEDURAL_SPIDER.get(),
+                ModEntityTypes.BUCCANEER.get(),
                 Monster.createMonsterAttributes()
-                        .add(Attributes.MAX_HEALTH, 30.0)
-                        .add(Attributes.MOVEMENT_SPEED, 0.3)
+                        .add(Attributes.MAX_HEALTH, 20.0)
+                        .add(Attributes.MOVEMENT_SPEED, 0.35)
                         .add(Attributes.ATTACK_DAMAGE, 5.0)
                         .add(Attributes.ARMOR, 2.0)
                         .add(Attributes.FOLLOW_RANGE, 32.0)

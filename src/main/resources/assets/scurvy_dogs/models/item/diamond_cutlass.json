@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "scurvy_dogs:item/diamond_cutlass"
+  }
+}

@@ -1,10 +1,7 @@
 package net.techno573.scurvydogs.event;
 
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
-import net.techno573.scurvydogs.entity.ModEntities;
-import net.techno573.scurvydogs.entity.client.ProceduralSpiderRenderer;
 import net.techno573.scurvydogs.item.ModItems;
 import net.techno573.scurvydogs.item.client.DefaultHatItemColor;
 

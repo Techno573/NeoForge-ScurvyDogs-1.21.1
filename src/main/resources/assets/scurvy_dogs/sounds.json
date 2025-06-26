@@ -1,0 +1,30 @@
+{
+  "item.flintlock_pistol.charge_start":
+  {
+    "sounds":
+    [
+      "scurvy_dogs:item/flintlock_pistol/charge_start"
+    ]
+  },
+  "item.flintlock_pistol.charge_middle":
+  {
+    "sounds":
+    [
+      "scurvy_dogs:item/flintlock_pistol/charge_middle"
+    ]
+  },
+  "item.flintlock_pistol.charge_end":
+  {
+    "sounds":
+    [
+      "scurvy_dogs:item/flintlock_pistol/charge_end"
+    ]
+  },
+  "item.flintlock_pistol.shot":
+  {
+    "sounds":
+    [
+      "scurvy_dogs:item/flintlock_pistol/shot"
+    ]
+  }
+}

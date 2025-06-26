@@ -22,5 +22,14 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.BICORN_HAT.get());
                 output.accept(ModItems.FANCY_BICORN_HAT.get());
                 output.accept(ModItems.BANDANA.get());
+
+                output.accept(ModItems.WOODEN_CUTLASS.get());
+                output.accept(ModItems.STONE_CUTLASS.get());
+                output.accept(ModItems.IRON_CUTLASS.get());
+                output.accept(ModItems.GOLDEN_CUTLASS.get());
+                output.accept(ModItems.DIAMOND_CUTLASS.get());
+                output.accept(ModItems.NETHERITE_CUTLASS.get());
+
+                output.accept(ModItems.BUCCANEER_SPAWN_EGG.get());
             }).build());
 }

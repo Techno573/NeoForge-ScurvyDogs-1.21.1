@@ -21,8 +21,13 @@
 					"pivot": [0, 24, 0]
 				},
 				{
-					"name": "hat",
+					"name": "hat_root",
 					"parent": "armorHead",
+					"pivot": [0, 30, 0]
+				},
+				{
+					"name": "hat",
+					"parent": "hat_root",
 					"pivot": [0, 30, 0],
 					"rotation": [-5, 0, 0],
 					"cubes": [
@@ -54,7 +59,7 @@
 				},
 				{
 					"name": "feather",
-					"parent": "armorHead",
+					"parent": "hat_root",
 					"pivot": [5.0875, 29.65, -4],
 					"cubes": [
 						{

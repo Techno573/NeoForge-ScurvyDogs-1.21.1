@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "scurvy_dogs:item/flintlock_pistol_3d"
+  },
+  "perspectives": {
+    "gui" : {
+      "parent": "scurvy_dogs:item/flintlock_pistol_2d"
+    },
+    "fixed" : {
+      "parent": "scurvy_dogs:item/flintlock_pistol_2d"
+    },
+    "ground" : {
+      "parent": "scurvy_dogs:item/flintlock_pistol_2d"
+    },
+    "head" : {
+      "parent": "scurvy_dogs:item/flintlock_pistol_2d"
+    }
+  }
+}

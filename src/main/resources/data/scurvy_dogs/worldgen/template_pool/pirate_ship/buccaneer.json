@@ -1,0 +1,78 @@
+{
+  "name": "scurvy_dogs:pirate_ship/buccaneer",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scurvy_dogs:pirate_ship/entity/buccaneer/tricorn_pistol",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scurvy_dogs:pirate_ship/entity/buccaneer/tricorn_cutlass",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scurvy_dogs:pirate_ship/entity/buccaneer/bicorn_pistol",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scurvy_dogs:pirate_ship/entity/buccaneer/bicorn_cutlass",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scurvy_dogs:pirate_ship/entity/buccaneer/bandana_pistol",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scurvy_dogs:pirate_ship/entity/buccaneer/bandana_cutlass",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scurvy_dogs:pirate_ship/entity/buccaneer/bald_pistol",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "scurvy_dogs:pirate_ship/entity/buccaneer/bald_cutlass",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

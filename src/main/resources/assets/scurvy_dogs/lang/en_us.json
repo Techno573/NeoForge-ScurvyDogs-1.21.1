@@ -4,5 +4,21 @@
   "item.scurvy_dogs.fancy_tricorn_hat": "Fancy Tricorn Hat",
   "item.scurvy_dogs.fancy_bicorn_hat": "Fancy Bicorn Hat",
   "item.scurvy_dogs.bandana": "Bandana",
+
+  "item.scurvy_dogs.flintlock_pistol": "Flintlock Pistol",
+  "item.scurvy_dogs.flintlock_pellet": "Flintlock Pellet",
+
+  "item.scurvy_dogs.wooden_cutlass": "Wooden Cutlass",
+  "item.scurvy_dogs.stone_cutlass": "Stone Cutlass",
+  "item.scurvy_dogs.iron_cutlass": "Iron Cutlass",
+  "item.scurvy_dogs.golden_cutlass": "Golden Cutlass",
+  "item.scurvy_dogs.diamond_cutlass": "Diamond Cutlass",
+  "item.scurvy_dogs.netherite_cutlass": "Netherite Cutlass",
+
+  "item.scurvy_dogs.buccaneer_spawn_egg": "Buccaneer Spawn Egg",
+
+  "entity.scurvy_dogs.buccaneer": "Buccaneer",
+  "entity.scurvy_dogs.flintlock_pellet": "Flintlock Pellet",
+
   "itemGroup.scurvy_dogs": "Scurvy Dogs!"
 }

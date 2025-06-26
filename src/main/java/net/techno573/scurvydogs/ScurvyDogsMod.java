@@ -2,12 +2,15 @@ package net.techno573.scurvydogs;
 
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.techno573.scurvydogs.block.ModBlocks;
-import net.techno573.scurvydogs.entity.ModEntities;
+import net.techno573.scurvydogs.entity.ModEntityLayers;
+import net.techno573.scurvydogs.entity.ModEntityTypes;
 import net.techno573.scurvydogs.entity.ModEntityAttributes;
-import net.techno573.scurvydogs.entity.client.ProceduralSpiderRenderer;
+import net.techno573.scurvydogs.entity.client.renderer.BuccaneerRenderer;
+import net.techno573.scurvydogs.entity.client.renderer.FlintlockPelletEntityRenderer;
 import net.techno573.scurvydogs.event.ModEventBus;
 import net.techno573.scurvydogs.item.ModCreativeModeTabs;
 import net.techno573.scurvydogs.item.ModItems;
+import net.techno573.scurvydogs.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -43,7 +46,8 @@ public class ScurvyDogsMod
         // Register the Deferred Register to the mod event bus so tabs get registered
         ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
 
-        ModEntities.register(modEventBus);
+        ModEntityTypes.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -52,6 +56,7 @@ public class ScurvyDogsMod
         // Register the item to a creative tab
         modEventBus.register(new ModEventBus());
         modEventBus.addListener(ModEntityAttributes::registerAttributes);
+        modEventBus.addListener(ModEntityLayers::registerLayers);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -84,7 +89,8 @@ public class ScurvyDogsMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            EntityRenderers.register(ModEntities.PROCEDURAL_SPIDER.get(), ProceduralSpiderRenderer::new);
+            EntityRenderers.register(ModEntityTypes.BUCCANEER.get(), BuccaneerRenderer::new);
+            EntityRenderers.register(ModEntityTypes.FLINTLOCK_PELLET.get(), FlintlockPelletEntityRenderer::new);
         }
     }
 }
